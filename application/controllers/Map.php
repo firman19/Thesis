@@ -125,19 +125,6 @@ class Map extends CI_Controller {
 		$this->load->view('map',$data);
 	}
 
-	function getGPS($lat,$lng,$hdg){
-            date_default_timezone_set("Asia/Jakarta");
-            $date = date('Y-m-d H:i:s');
-		$data = array(
-                  'vehicle_id' => 1,
-			'lat' => $lat,
-			'lng' => $lng,
-                  'hdg' => $hdg,
-                  'time'=> $date
-		);
-		$this->db->insert('coordinate',$data);
-	}
-
       function setDest(){
             $destination_id = $this->input->post('destination_id');
             $data = array(
@@ -161,7 +148,6 @@ class Map extends CI_Controller {
             $sql = "SELECT * FROM `coordinate`, `vehicle` WHERE time = (SELECT MAX(time) from `coordinate`) AND
                         vehicle.id = coordinate.vehicle_id AND vehicle.id = 1";
             $result = $this->db->query($sql)->row();
-
             echo json_encode($result);
       }
 
