@@ -143,8 +143,8 @@ class Map extends CI_Controller {
             $data = array(
                   'destination_id' => $destination_id,
             );
-            $this->db->where('vehicle_id', 1);
-            if($this->db->update('curr_dest', $data)){
+            $this->db->where('id', 1);
+            if($this->db->update('vehicle', $data)){
                 echo json_encode("Update Sukses : ".$this->db->insert_id());
             }else{
                 echo json_encode("Update error : ".mysql_error());
@@ -152,7 +152,7 @@ class Map extends CI_Controller {
       }
 
       function getDestinationList(){
-            $sql = "SELECT * FROM dest_list WHERE user_id= '1'";
+            $sql = "SELECT * FROM dest_list";
             $result = $this->db->query($sql)->result();
             echo json_encode($result); 
       }
