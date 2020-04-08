@@ -1,0 +1,249 @@
+.leaflet-control-playback{
+
+    margin-top: -7%;
+
+    position:relative;
+
+    /*background-color:#7cbdf5;
+
+    padding:10px;
+
+    width: 100%;*/
+
+    margin-right: 10%;
+
+    margin-left: 10%;
+
+    width: 1000px;
+
+    /*min-width: 100%;*/
+
+    height: 60px;
+
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .07);
+
+    /*display: flex;*/
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    /*padding-left: 24px;*/
+
+    /*padding-right: 24px;*/
+
+    padding:10px;
+
+    border-radius: 4px;
+
+    user-select: none;
+
+    -webkit-user-select: none;
+
+    background-color: #1987d2a1;
+
+}
+
+.leaflet-control-playback .optionsContainer{position:relative;}
+
+.leaflet-control-playback .optionsContainer > div {
+
+    /*display: inline-block;*/
+
+    display: none;
+
+}
+
+.leaflet-control-playback .buttonContainer {}
+
+.leaflet-control-playback .buttonContainer  a {
+
+    display: inline-block;
+
+    width: 32px;
+
+    height: 32px;
+
+    text-decoration: none;
+
+}
+
+/*.leaflet-control-playback .buttonContainer .btn-stop {
+
+    background: url(./images/icon-play.png) no-repeat center;
+
+    background-size: 50%;
+
+}
+
+.leaflet-control-playback .buttonContainer .btn-start {
+
+    background: url(./images/icon-stop.png) no-repeat center;
+
+    background-size: 50%;
+
+}
+
+.leaflet-control-playback .buttonContainer .btn-restart {
+
+    background: url(./images/icon-restart.png) no-repeat center;
+
+    background-size: 50%;
+
+}
+
+.leaflet-control-playback .buttonContainer .btn-slow {
+
+    background: url(./images/icon-slow.png) no-repeat center;
+
+    background-size: 50%;
+
+}
+
+.leaflet-control-playback .buttonContainer .btn-quick {
+
+    background:  url(./images/icon-quick.png) no-repeat center;
+
+    background-size: 50%;
+
+}
+
+.leaflet-control-playback .buttonContainer .btn-close {
+
+    background: url(./images/icon-close.png)   no-repeat center;
+
+    background-size: 50%;
+
+}*/
+
+.leaflet-control-playback .infoContainer {
+
+    display: inline-block;
+
+    float: right;
+
+}
+
+.leaflet-control-playback .infoContainer .info-container {
+
+    display: inline-block;
+
+    font-size: 13px;
+
+}
+
+.leaflet-control-playback .infoContainer .info-container .info-cur-time {
+
+    margin-left: -50%;
+
+}
+
+.leaflet-control-playback .infoContainer .info-container .info-start-time {
+
+    margin-left: -600%;
+
+}
+
+.leaflet-control-playback .sliderContainer {}
+
+.leaflet-control-playback .sliderContainer  a {
+
+    display: inline-block;
+
+    width: 30px;
+
+    height: 20px;
+
+    text-decoration: none;
+
+}
+
+.leaflet-control-playback .sliderContainer .info-container {
+
+    display: inline-block;
+
+    width: 20px;
+
+    /*height: 15px;*/
+
+    text-decoration: none;
+
+}
+
+.leaflet-control-playback .sliderContainer .info-container a {}
+
+.info-speed-ratio {
+
+    position: absolute;
+
+    top:11px;
+
+}
+
+.leaflet-control-playback .sliderContainer .btn-stop {
+
+    background: url(./images/icon-play.png) no-repeat center;
+
+    background-size: 40%;
+
+}
+
+.leaflet-control-playback .sliderContainer .btn-start {
+
+    background: url(./images/icon-stop.png) no-repeat center;
+
+    background-size: 40%;
+
+}
+
+.leaflet-control-playback .sliderContainer .btn-restart {
+
+    background: url(./images/icon-restart.png) no-repeat center;
+
+    background-size: 40%;
+
+}
+
+.leaflet-control-playback .sliderContainer .btn-slow {
+
+    background: url(./images/icon-slow.png) no-repeat center;
+
+    background-size: 40%;
+
+}
+
+.leaflet-control-playback .sliderContainer .btn-quick {
+
+    background:  url(./images/icon-quick.png) no-repeat center;
+
+    background-size: 40%;
+
+}
+
+.leaflet-control-playback .sliderContainer .btn-close {
+
+    background: url(./images/icon-close.png)   no-repeat center;
+
+    background-size: 40%;
+
+}
+
+.leaflet-control-playback .sliderContainer .time-slider {
+
+    width: 80%;
+
+    /*margin-left: 25%;
+
+    flex-grow: 1;
+
+    background-color: #d8d8d8;
+
+    cursor: pointer;
+
+    position: relative;
+
+    border-radius: 2px;
+
+    height: 4px;*/
+
+}
